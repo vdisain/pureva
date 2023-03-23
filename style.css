@@ -32,6 +32,10 @@ a{
     text-decoration: none;
 }
 
+.btn--link:hover, .btn--link:focus {
+    text-decoration: none !important;
+}
+
 .fs-12 {
     font-size: 12px;
 }
@@ -255,6 +259,52 @@ a{
     transition: none;
   }
 
+  .account-menu {
+    background: #fff;
+    display: none;
+    top: 40px;
+    right: 20px;
+    width: 190px;
+  }
+
+  .account-menu ul {
+    list-style: none;
+  }
+
+  #accountDropdown + .dropdown-menu .dropdown-item {
+    padding: 12px 24px !important;
+  }
+
+  p.dropdown-item:hover,
+  p.dropdown-item:active {
+    background-color: white;
+    color: var(--clr-black);
+  }
+  
+  .cart-items {
+    background-color: #FFEB3B;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -3px;
+    right: -9px;
+  }
+
+  .cart-items span {
+    color: var(--clr-black);
+    font-size: 9px;
+  }
+
+  @media (min-width: 1440px) {
+    #accountDropdown + .dropdown-menu.show {
+        width: 194px;
+        transform: translate3d(-65px, 41.6px, 0px) !important;
+      }
+  }
+  
+
 
   @media (min-width:768px) {
     .menu--main #collapseExample {
@@ -405,6 +455,13 @@ a{
     border: 0;
     content: url("data:image/svg+xml,%3Csvg width='20' height='11' viewBox='0 0 20 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.98957 0.379941C0.49957 0.869941 0.49957 1.65994 0.98957 2.14994L9.29957 10.4599C9.68957 10.8499 10.3196 10.8499 10.7096 10.4599L19.0196 2.14994C19.5096 1.65994 19.5096 0.869941 19.0196 0.379941C18.5296 -0.110059 17.7396 -0.110059 17.2496 0.379941L9.99957 7.61994L2.74957 0.369943C2.26957 -0.110057 1.46957 -0.110059 0.98957 0.379941Z' fill='white'/%3E%3C/svg%3E%0A");
 }
+
+.dropdown-toggle::after {
+    margin-left: 0;
+    border: none !important;
+    content: url("data:image/svg+xml,%3Csvg width='20' height='11' viewBox='0 0 20 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.98957 0.379941C0.49957 0.869941 0.49957 1.65994 0.98957 2.14994L9.29957 10.4599C9.68957 10.8499 10.3196 10.8499 10.7096 10.4599L19.0196 2.14994C19.5096 1.65994 19.5096 0.869941 19.0196 0.379941C18.5296 -0.110059 17.7396 -0.110059 17.2496 0.379941L9.99957 7.61994L2.74957 0.369943C2.26957 -0.110057 1.46957 -0.110059 0.98957 0.379941Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+
 
 .txt-black {
     color: var(--clr-black);

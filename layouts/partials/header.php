@@ -103,16 +103,51 @@
             </div>
 
             <div class="header__cta">
-                <a href="/" class="btn--link mr-20">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M8 8.90332C10.21 8.90332 12 7.11332 12 4.90332C12 2.69332 10.21 0.90332 8 0.90332C5.79 0.90332 4 2.69332 4 4.90332C4 7.11332 5.79 8.90332 8 8.90332ZM8 10.9033C5.33 10.9033 0 12.2433 0 14.9033V15.9033C0 16.4533 0.45 16.9033 1 16.9033H15C15.55 16.9033 16 16.4533 16 15.9033V14.9033C16 12.2433 10.67 10.9033 8 10.9033Z" fill="white"/>
-                    </svg>
-                    <span class="d-none d-lg-inline">Logi sisse</span>
-                </a>
+                <div class="dropdown d-flex">
+                <!--- Logged out view--->
+                    <!-- <a href="/" class="btn--link mr-20">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 8.90332C10.21 8.90332 12 7.11332 12 4.90332C12 2.69332 10.21 0.90332 8 0.90332C5.79 0.90332 4 2.69332 4 4.90332C4 7.11332 5.79 8.90332 8 8.90332ZM8 10.9033C5.33 10.9033 0 12.2433 0 14.9033V15.9033C0 16.4533 0.45 16.9033 1 16.9033H15C15.55 16.9033 16 16.4533 16 15.9033V14.9033C16 12.2433 10.67 10.9033 8 10.9033Z" fill="white"/>
+                        </svg>
+                        <span class="d-none d-lg-inline">Logi sisse</span>
+                    </a> -->
+                <!---------------->
+
+                 <!--- Logged in view--->
+                    <a href="#" class="btn--link mr-20 dropdown-toggle" role="button" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 8.90332C10.21 8.90332 12 7.11332 12 4.90332C12 2.69332 10.21 0.90332 8 0.90332C5.79 0.90332 4 2.69332 4 4.90332C4 7.11332 5.79 8.90332 8 8.90332ZM8 10.9033C5.33 10.9033 0 12.2433 0 14.9033V15.9033C0 16.4533 0.45 16.9033 1 16.9033H15C15.55 16.9033 16 16.4533 16 15.9033V14.9033C16 12.2433 10.67 10.9033 8 10.9033Z" fill="white"/>
+                        </svg>
+                        <span class="d-none d-lg-inline">Kasutaja</span>
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li>
+                                <p class="dropdown-item fw-500 fst-italic m-0">Tere, <span>Kasutaja</span></p>
+                            </li>
+                            <li class="border-top border-grey">
+                                <a class="dropdown-item" href="#">Minu lemmikud</a>
+                            </li>
+                            <li class="border-top border-grey">
+                                <a class="dropdown-item" href="#">Muuda parooli</a>
+                            </li>
+                            <li class="border-top border-grey">
+                                <a class="dropdown-item" href="#">Logi välja</a>
+                            </li>
+                        </ul>
+                    <!---------------->
+                </div>    
                 <a href="/" class="btn--link">
-                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.5 16.9033C5.4 16.9033 4.51 17.8033 4.51 18.9033C4.51 20.0033 5.4 20.9033 6.5 20.9033C7.6 20.9033 8.5 20.0033 8.5 18.9033C8.5 17.8033 7.6 16.9033 6.5 16.9033ZM0.5 1.90332C0.5 2.45332 0.95 2.90332 1.5 2.90332H2.5L6.1 10.4933L4.75 12.9333C4.02 14.2733 4.98 15.9033 6.5 15.9033H17.5C18.05 15.9033 18.5 15.4533 18.5 14.9033C18.5 14.3533 18.05 13.9033 17.5 13.9033H6.5L7.6 11.9033H15.05C15.8 11.9033 16.46 11.4933 16.8 10.8733L20.38 4.38332C20.75 3.72332 20.27 2.90332 19.51 2.90332H4.71L4.04 1.47332C3.88 1.12332 3.52 0.90332 3.14 0.90332H1.5C0.95 0.90332 0.5 1.35332 0.5 1.90332ZM16.5 16.9033C15.4 16.9033 14.51 17.8033 14.51 18.9033C14.51 20.0033 15.4 20.9033 16.5 20.9033C17.6 20.9033 18.5 20.0033 18.5 18.9033C18.5 17.8033 17.6 16.9033 16.5 16.9033Z" fill="white"/>
-                    </svg>
+                    <span class="d-none d-lg-inline position-relative">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 16.9033C5.4 16.9033 4.51 17.8033 4.51 18.9033C4.51 20.0033 5.4 20.9033 6.5 20.9033C7.6 20.9033 8.5 20.0033 8.5 18.9033C8.5 17.8033 7.6 16.9033 6.5 16.9033ZM0.5 1.90332C0.5 2.45332 0.95 2.90332 1.5 2.90332H2.5L6.1 10.4933L4.75 12.9333C4.02 14.2733 4.98 15.9033 6.5 15.9033H17.5C18.05 15.9033 18.5 15.4533 18.5 14.9033C18.5 14.3533 18.05 13.9033 17.5 13.9033H6.5L7.6 11.9033H15.05C15.8 11.9033 16.46 11.4933 16.8 10.8733L20.38 4.38332C20.75 3.72332 20.27 2.90332 19.51 2.90332H4.71L4.04 1.47332C3.88 1.12332 3.52 0.90332 3.14 0.90332H1.5C0.95 0.90332 0.5 1.35332 0.5 1.90332ZM16.5 16.9033C15.4 16.9033 14.51 17.8033 14.51 18.9033C14.51 20.0033 15.4 20.9033 16.5 20.9033C17.6 20.9033 18.5 20.0033 18.5 18.9033C18.5 17.8033 17.6 16.9033 16.5 16.9033Z" fill="white"/>
+                        </svg>
+                         <!--- Cart items--->
+                        <span class="position-absolute rounded-circle cart-items">
+                            <span class="">1</span>
+                        </span>
+                         <!----------------->
+                    </span>
+                    
                     <span class="d-none d-lg-inline">Ostukorv</span>
                 </a>
             </div>
