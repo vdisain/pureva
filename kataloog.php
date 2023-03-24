@@ -5,7 +5,7 @@
 
 <div class="container">
     <div class="filter-wrapper align-items-center mb-3 mb-xl-5">
-        <h1 class="sale-page-title fs-32 mb-0 me-auto">Soodustooted</h1>
+        <h1 class="sale-page-title fs-32 mb-0 me-auto">Tooted</h1>
         <div class="filter d-flex flex-column flex-lg-row align-items-lg-center ">
             <?php include 'layouts/partials/filter.php' ?>
         </div>

@@ -136,6 +136,12 @@ a{
     padding-top: 66px;
 }
 
+@media (min-width:1024px) {
+    .w-lg-50 {
+        width: 50% !important;
+    }
+}
+
 .header{
     background-color: var(--clr-black);
     width: 100%;
@@ -1650,7 +1656,7 @@ table.checkout-price-table th {
 
 /*////////// Kassa //////////////*/
 
-input.input-text:focus ~ .floating-label {
+/* input.input-text:focus ~ .floating-label {
     top: 3px;
     bottom: 10px;
     left: 12px;
@@ -1678,7 +1684,34 @@ input.input-text:focus ~ .floating-label {
     font-size: 14px;
     transition: 0.2s ease all;
     color: #c3c6c8;
+} */
+
+.form-floating > .form-control-plaintext ~ label, .form-floating > .form-control:focus ~ label, 
+.form-floating > .form-control:not(:placeholder-shown) ~ label, 
+.form-floating > .form-select ~ label {
+    transform: scale(.65) translateY(-.5rem) translateX(.15rem);
 }
+
+.form-floating > .form-control-plaintext ~ label, .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: 1 !important;
+  }
+
+.form-floating > .form-control, 
+.form-floating > .form-control-plaintext, 
+.form-floating > .form-select {
+    height: calc( 44px + 2px) !important;
+  }
+
+.form-control {
+    font-size: 14px !important;
+ } 
+
+ .form-floating > label {
+    color: #cbccce;
+    font-size: 14px !important;
+    padding: 12px !important;
+ }
+
 
 input:focus-visible {
     outline: none;

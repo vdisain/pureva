@@ -12,38 +12,38 @@
                             <div class="col-12 col-md-6 pe-2">
                                 <h4 class="fs-16 mb-3">Kontaktandmed</h4>
                                 <div>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_name" type="text"  name="billing_name" required/>
-                                        <span class="floating-label">Ees- ja perekonnanimi</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_name" type="text"  name="billing_name" placeholder="Ees- ja perekonnanimi" required/>
+                                        <label for="billing_name">Ees- ja perekonnanimi</label>
                                     </p>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_phone" type="tel"  name="billing_phone" required/>
-                                        <span class="floating-label">Telefon</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_phone" type="tel"  name="billing_phone" placeholder="Telefon" required/>
+                                        <label for="billing_phone">Telefon</label>
                                     </p>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_email" type="email"  name="billing_email" required/>
-                                        <span class="floating-label">E-post</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_email" type="email"  name="billing_email" placeholder="E-post" required/>
+                                        <label for="billing_email">E-post</label>
                                     </p>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_company" type="text"  name="billing_company"/>
-                                        <span class="floating-label">Ettevõte (vajadusel)</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_company" type="text"  name="billing_company" placeholder="Ettevõte (vajadusel)" />
+                                        <label for="billing_company">Ettevõte (vajadusel)</label>
                                     </p>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 ps-0 ps-md-2">
                                 <h4 class="fs-16 mt-4 mt-md-0 mb-3">Aadress</h4>
                                 <div>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_address" type="text"  name="billing_address" required/>
-                                        <span class="floating-label">Aadress</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_address" type="text"  name="billing_address" placeholder="Aadress" required/>
+                                        <label for="billing_address">Aadress</label>
                                     </p>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_city" type="text"  name="billing_city" required/>
-                                        <span class="floating-label">Linn</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_city" type="text"  name="billing_city" placeholder="Linn" required/>
+                                        <label for="billing_city">Linn</label>
                                     </p>
-                                    <p class="mb-2 position-relative">
-                                        <input class="input-text" id="billing_postcode" type="text"  name="billing_postcode" required/>
-                                        <span class="floating-label">Postiindeks</span>
+                                    <p class="form-floating mb-2 position-relative">
+                                        <input class="form-control" id="billing_postcode" type="text"  name="billing_postcode" placeholder="Postiindeks" required/>
+                                        <label for="billing_postcode">Postiindeks</label>
                                     </p>
                                 </div>
                             </div>
@@ -61,38 +61,38 @@
                                 <div class="col-12 col-md-6 pe-0 pe-md-2">
                                     <h4 class="fs-16 mb-3">Kontaktandmed</h4>
                                     <div>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_name" type="text"  name="billing_name" required/>
-                                            <span class="floating-label">Ees- ja perekonnanimi</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_name" type="text"  name="billing_name" placeholder="Ees- ja perekonnanimi" required/>
+                                            <label for="billing_name">Ees- ja perekonnanimi</label>
                                         </p>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_phone" type="tel"  name="billing_phone" required/>
-                                            <span class="floating-label">Telefon</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_phone" type="tel"  name="billing_phone" placeholder="Telefon" required/>
+                                            <label for="billing_phone">Telefon</label>
                                         </p>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_email" type="email"  name="billing_email" required/>
-                                            <span class="floating-label">E-post</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_email" type="email"  name="billing_email" placeholder="E-post" required/>
+                                            <label for="billing_email">E-post</label>
                                         </p>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_company" type="text"  name="billing_company"/>
-                                            <span class="floating-label">Ettevõte (vajadusel)</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_company" type="text"  name="billing_company" placeholder="Ettevõte (vajadusel)" />
+                                            <label for="billing_company">Ettevõte (vajadusel)</label>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 ps-0 ps-md-2">
                                     <h4 class="fs-16 mt-4 mt-md-0 mb-3">Aadress</h4>
                                     <div>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_address" type="text"  name="billing_address" required/>
-                                            <span class="floating-label">Aadress</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_address" type="text"  name="billing_address" placeholder="Aadress" required/>
+                                            <label for="billing_address">Aadress</label>
                                         </p>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_city" type="text"  name="billing_city" required/>
-                                            <span class="floating-label">Linn</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_city" type="text"  name="billing_city" placeholder="Linn" required/>
+                                            <label for="billing_city">Linn</label>
                                         </p>
-                                        <p class="mb-2 position-relative">
-                                            <input class="input-text" id="billing_postcode" type="text"  name="billing_postcode" required/>
-                                            <span class="floating-label">Postiindeks</span>
+                                        <p class="form-floating mb-2 position-relative">
+                                            <input class="form-control" id="billing_postcode" type="text"  name="billing_postcode" placeholder="Postiindeks" required/>
+                                            <label for="billing_postcode">Postiindeks</label>
                                         </p>
                                     </div>
                                 </div>

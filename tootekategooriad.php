@@ -1,6 +1,8 @@
 <?php include 'layouts/partials/header.php'; ?>
 
-<div class="container my-5 product-categories">
+<?php include 'layouts/partials/breadcrumbs.php'; ?>
+
+<div class="container mb-5 product-categories">
     <div class="d-flex flex-wrap justify-content-md-center">
         <h1>Tootekategooriad</h1>
     </div>
