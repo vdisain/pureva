@@ -74,12 +74,11 @@
 <body>
     <header class="header">
         <div class="container">
-            <picture class="header__logo">
+            <div class="header__logo">
                 <a href="./">
-                <source srcset="/images/pureva-logo.png" type="image/png">
-                <source srcset="/images/pureva-logo.webp" type="image/webp">
-                <img src="/images/pureva-logo.webp" alt=""></a>
-            </picture>
+                    <img src="/images/site-logo.svg" alt="pureva_logo">
+                </a>
+            </div>
 
             <form action="/" method="get" class="header__search">
                 <input type="text" name="search" placeholder="Otsi toodet..." class="form__control--search" aria-label="Otsi toodet">
