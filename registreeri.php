@@ -41,24 +41,24 @@
                         <label for="your_phone">Telefon*</label>
                     </p>
                     <p class="form-floating mb-3 w-100 position-relative">
-                        <input class="form-control" id="your_firm_name" type="text" placeholder="Ettevõtte nimi" />
-                        <label for="your_firm_name">Ettevõtte nimi</label>
+                        <input class="form-control" id="your_firm_name" type="text" placeholder="Ettevõtte nimi" required/>
+                        <label for="your_firm_name">Ettevõtte nimi*</label>
                     </p>
                 </div>
                 <div class="d-flex flex-column flex-md-row">
                     <p class="form-floating mb-3 me-md-3 w-100 position-relative">
-                        <input class="form-control" id="your_legal_address_town" type="text" placeholder="Juriidiline aadress (linn)" />
-                        <label for="your_legal_address_town">Juriidiline aadress (linn)</label>
+                        <input class="form-control" id="your_legal_address_town" type="text" placeholder="Juriidiline aadress (linn)" required/>
+                        <label for="your_legal_address_town">Juriidiline aadress (linn)*</label>
                     </p>
                     <p class="form-floating mb-3 w-100 position-relative">
-                        <input class="form-control" id="your_legal_address_street" type="text" placeholder="Juriidiline aadress (tänav)" />
-                        <label for="your_legal_address_street">Juriidiline aadress (tänav)</label>
+                        <input class="form-control" id="your_legal_address_street" type="text" placeholder="Juriidiline aadress (tänav)" required/>
+                        <label for="your_legal_address_street">Juriidiline aadress (tänav)*</label>
                     </p>
                 </div>
                 <div class="d-flex flex-column flex-md-row">
                     <p class="form-floating mb-3 me-md-3 w-100 position-relative">
-                        <input class="form-control" id="your_legal_address_postal_code" type="text" placeholder="Juriidiline aadress (postiindeks)" />
-                        <label for="your_legal_address_postal_code">Juriidiline aadress (postiindeks)</label>
+                        <input class="form-control" id="your_legal_address_postal_code" type="text" placeholder="Juriidiline aadress (postiindeks)" required/>
+                        <label for="your_legal_address_postal_code">Juriidiline aadress (postiindeks)*</label>
                     </p>
                     <p class="form-floating mb-3 w-100 position-relative">
                         <input class="form-control" id="your_KMKR" type="text" placeholder="KMKR number" />
