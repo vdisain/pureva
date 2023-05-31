@@ -150,13 +150,10 @@
                     <span class="d-none d-md-inline">Ostukorv</span>
                 </a>
             </div>
-            <a href="/" class="nav__toggle btn--link mr--48 "  data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="/" class="nav__toggle btn--link" data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 12.1675H17C17.55 12.1675 18 11.7175 18 11.1675C18 10.6175 17.55 10.1675 17 10.1675H1C0.45 10.1675 0 10.6175 0 11.1675C0 11.7175 0.45 12.1675 1 12.1675ZM1 7.16748H17C17.55 7.16748 18 6.71748 18 6.16748C18 5.61748 17.55 5.16748 17 5.16748H1C0.45 5.16748 0 5.61748 0 6.16748C0 6.71748 0.45 7.16748 1 7.16748ZM0 1.16748C0 1.71748 0.45 2.16748 1 2.16748H17C17.55 2.16748 18 1.71748 18 1.16748C18 0.61748 17.55 0.16748 17 0.16748H1C0.45 0.16748 0 0.61748 0 1.16748Z" fill="white"/>
                 </svg>
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
                 <span class="d-none d-lg-inline all-products">Kõik tooted</span>
             </a>
             <div class="main-menu d-none d-xl-flex">
@@ -166,243 +163,241 @@
                 <a href="/uudistooted/">Uudistooted</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <nav class="menu--main ">
+                <nav class="menu--main">
                     <ul class="d-flex flex-column gap-3 ps-0">
-                        <li class="d-flex justify-content-between align-items-center d-lg-none">
-                            <a href="#collapseExample" class="menu__item" data-bs-toggle="collapse" >  
+                        <li>
+                            <a href="#collapseExample" class="menu__item d-lg-none" role="button" data-bs-toggle="collapse">  
                                 Kõik tooted
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                </svg>
                             </a>
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                            </svg>
+                            
+                            <ul class="all-categories gap-3 collapse flex-column" id="collapseExample" data-categories-collapse>
+                                <li>
+                                    <a href="#collapseExamplesecond" class="menu__item justify-content-between" role="button" data-bs-toggle="collapse" data-bs-parent="#collapseExample" aria-expanded="false" aria-controls="collapseExamplesecond">
+                                        Aiatööriistad
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                        </svg>
+                                    </a>
+    
+                                    <div class="collapse flex-column pb-md-5 h-100 nav-category-list" id="collapseExamplesecond">
+                                        <div class="d-none align-items-center justify-content-evenly bg-light-blue border-0 rounded-3">
+                                            <h3 class="fs-24 txt-black mb-0">Aiatööriistad</h3>
+                                            <a href="#" class="btn btn-primary fs-16 fw-600 border-0 rounded-pill">Vaata lähemalt</a>
+                                            <img src="/images/aiakäärid.png" height="100" alt="product-name">
+                                            <p class="fs-14 txt-black text-center m-0">Tasuta transport alates 100€ ostust 14-päevane tagastusõigus</p>
+                                            <a href="#" class="close-btn">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.8952 0.517832C12.5052 0.127832 11.8752 0.127832 11.4852 0.517832L6.59519 5.39783L1.70519 0.507832C1.31519 0.117832 0.685186 0.117832 0.295186 0.507832C-0.0948145 0.897832 -0.0948145 1.52783 0.295186 1.91783L5.18519 6.80783L0.295186 11.6978C-0.0948145 12.0878 -0.0948145 12.7178 0.295186 13.1078C0.685186 13.4978 1.31519 13.4978 1.70519 13.1078L6.59519 8.21783L11.4852 13.1078C11.8752 13.4978 12.5052 13.4978 12.8952 13.1078C13.2852 12.7178 13.2852 12.0878 12.8952 11.6978L8.00519 6.80783L12.8952 1.91783C13.2752 1.53783 13.2752 0.897832 12.8952 0.517832Z" fill="#121A23"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <ul class="d-flex flex-column nav-product-list w-75 gap-3">
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Aiakäärid 
+                                                    <span class="item-count">(6)</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Aiatarbed 
+                                                    <span class="item-count">(29)</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Anumad 
+                                                    <span class="item-count">(8)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Kanistrid, kannud, lehtrid 
+                                                    <span class="item-count">(25)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Kastekannud
+                                                    <span class="item-count">(6)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Kastmistarvikud
+                                                    <span class="item-count">(30)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Kummirattad
+                                                    <span class="item-count">(26)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Köied, näärid
+                                                    <span class="item-count">(19)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Lumelabidad
+                                                    <span class="item-count">(3)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Pritspudelid, -püstolid
+                                                    <span class="item-count">(4)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplesecond" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Trimmerijõhvid
+                                                    <span class="item-count">(10)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <a href="#collapseExamplethird" class="menu__item justify-content-between" role="button" data-bs-toggle="collapse" data-bs-parent="#collapseExample" aria-expanded="false" aria-controls="collapseExamplethird">
+                                        Autokaubad
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                        </svg>
+                                    </a>
+
+                                    <div class="collapse flex-column pb-md-5 h-100 nav-category-list" id="collapseExamplethird">
+                                        <div class="d-none align-items-center justify-content-evenly bg-light-blue border-0 rounded-3">
+                                            <h3 class="fs-24 txt-black mb-0">Autokaubad</h3>
+                                            <a href="#" class="btn btn-primary fs-16 fw-600 border-0 rounded-pill">Vaata lähemalt</a>
+                                            <img src="/images/PresstangidM.png" height="100" alt="product-name">
+                                            <p class="fs-14 txt-black text-center m-0">Tasuta transport alates 100€ ostust 14-päevane tagastusõigus</p>
+                                            <a href="#" class="close-btn">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.8952 0.517832C12.5052 0.127832 11.8752 0.127832 11.4852 0.517832L6.59519 5.39783L1.70519 0.507832C1.31519 0.117832 0.685186 0.117832 0.295186 0.507832C-0.0948145 0.897832 -0.0948145 1.52783 0.295186 1.91783L5.18519 6.80783L0.295186 11.6978C-0.0948145 12.0878 -0.0948145 12.7178 0.295186 13.1078C0.685186 13.4978 1.31519 13.4978 1.70519 13.1078L6.59519 8.21783L11.4852 13.1078C11.8752 13.4978 12.5052 13.4978 12.8952 13.1078C13.2852 12.7178 13.2852 12.0878 12.8952 11.6978L8.00519 6.80783L12.8952 1.91783C13.2752 1.53783 13.2752 0.897832 12.8952 0.517832Z" fill="#121A23"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <ul class="d-flex flex-column nav-product-list w-75 gap-3">
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Akulaadijad
+                                                    <span class="item-count">(6)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Kanistrid, lehtrid
+                                                    <span class="item-count">(7)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Koormarihmad, pagasikummid
+                                                    <span class="item-count">(15)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Klaasipesuvedelikud
+                                                    <span class="item-count">(2)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Lumeharjad, jääkraabitsad
+                                                    <span class="item-count">(2)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Õlid ja määrdeained
+                                                    <span class="item-count">(1)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Pesuvahendid, -harjad
+                                                    <span class="item-count">(8)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Rehvitarvikud
+                                                    <span class="item-count">(8)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Salongitarvikud
+                                                    <span class="item-count">(10)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Tungrauad 
+                                                    <span class="item-count">(19)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#collapseExamplethird" class="menu__item fw-400 m-0" data-bs-toggle="collapse">
+                                                    Veoköied
+                                                    <span class="item-count">(2)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <a href="" class="menu__item justify-content-between" role="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-parent="#collapseExample" aria-controls="collapseExamplefourth"> 
+                                        Ehituskeemia
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <ul class="all-categories gap-3 collapse flex-column" id="collapseExample">
-                            <li class="d-flex justify-content-between align-items-center">
-                                <a href="#collapseExamplesecond" class="menu__item" data-bs-toggle="collapse" >
-                                    Aiatööriistad
-                                </a>
-                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                                </svg>
-                            </li>
-                                <ul class="collapse flex-column pb-md-5 h-100 nav-category-list" id="collapseExamplesecond">
-                                    <div class="d-none align-items-center justify-content-evenly bg-light-blue border-0 rounded-3">
-                                        <h3 class="fs-24 txt-black mb-0">Aiatööriistad</h3>
-                                        <a href="#" class="btn btn-primary fs-16 fw-600 border-0 rounded-pill">Vaata lähemalt</a>
-                                        <img src="/images/aiakäärid.png" height="100" alt="product-name">
-                                        <p class="fs-14 txt-black text-center m-0">Tasuta transport alates 100€ ostust 14-päevane tagastusõigus</p>
-                                        <a href="#" class="close-btn">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.8952 0.517832C12.5052 0.127832 11.8752 0.127832 11.4852 0.517832L6.59519 5.39783L1.70519 0.507832C1.31519 0.117832 0.685186 0.117832 0.295186 0.507832C-0.0948145 0.897832 -0.0948145 1.52783 0.295186 1.91783L5.18519 6.80783L0.295186 11.6978C-0.0948145 12.0878 -0.0948145 12.7178 0.295186 13.1078C0.685186 13.4978 1.31519 13.4978 1.70519 13.1078L6.59519 8.21783L11.4852 13.1078C11.8752 13.4978 12.5052 13.4978 12.8952 13.1078C13.2852 12.7178 13.2852 12.0878 12.8952 11.6978L8.00519 6.80783L12.8952 1.91783C13.2752 1.53783 13.2752 0.897832 12.8952 0.517832Z" fill="#121A23"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <ul class="d-flex flex-column nav-product-list w-75 gap-3">
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Aiakäärid 
-                                                <span class="item-count">(6)</span> 
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Aiatarbed 
-                                                <span class="item-count">(29)</span> 
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Anumad 
-                                                <span class="item-count">(8)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Kanistrid, kannud, lehtrid 
-                                                <span class="item-count">(25)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Kastekannud
-                                                <span class="item-count">(6)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Kastmistarvikud
-                                                <span class="item-count">(30)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Kummirattad
-                                                <span class="item-count">(26)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Köied, näärid
-                                                <span class="item-count">(19)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Lumelabidad
-                                                <span class="item-count">(3)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Pritspudelid, -püstolid
-                                                <span class="item-count">(4)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplesecond" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Trimmerijõhvid
-                                                <span class="item-count">(10)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    
-                                </ul>
-
-                            <li class="d-flex justify-content-between align-items-center">
-                                <a href="#collapseExamplethird" class="menu__item " data-bs-toggle="collapse" >
-                                    Autokaubad
-                                </a>
-                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                                </svg>
-                            </li>
-                                <ul class="collapse flex-column pb-md-5 h-100 nav-category-list" id="collapseExamplethird">
-                                    <div class="d-none align-items-center justify-content-evenly bg-light-blue border-0 rounded-3">
-                                        <h3 class="fs-24 txt-black mb-0">Autokaubad</h3>
-                                        <a href="#" class="btn btn-primary fs-16 fw-600 border-0 rounded-pill">Vaata lähemalt</a>
-                                        <img src="/images/PresstangidM.png" height="100" alt="product-name">
-                                        <p class="fs-14 txt-black text-center m-0">Tasuta transport alates 100€ ostust 14-päevane tagastusõigus</p>
-                                        <a href="#" class="close-btn">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.8952 0.517832C12.5052 0.127832 11.8752 0.127832 11.4852 0.517832L6.59519 5.39783L1.70519 0.507832C1.31519 0.117832 0.685186 0.117832 0.295186 0.507832C-0.0948145 0.897832 -0.0948145 1.52783 0.295186 1.91783L5.18519 6.80783L0.295186 11.6978C-0.0948145 12.0878 -0.0948145 12.7178 0.295186 13.1078C0.685186 13.4978 1.31519 13.4978 1.70519 13.1078L6.59519 8.21783L11.4852 13.1078C11.8752 13.4978 12.5052 13.4978 12.8952 13.1078C13.2852 12.7178 13.2852 12.0878 12.8952 11.6978L8.00519 6.80783L12.8952 1.91783C13.2752 1.53783 13.2752 0.897832 12.8952 0.517832Z" fill="#121A23"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <ul class="d-flex flex-column nav-product-list w-75 gap-3">
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Akulaadijad
-                                                <span class="item-count">(6)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Kanistrid, lehtrid
-                                                <span class="item-count">(7)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Koormarihmad, pagasikummid
-                                                <span class="item-count">(15)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Klaasipesuvedelikud
-                                                <span class="item-count">(2)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Lumeharjad, jääkraabitsad
-                                                <span class="item-count">(2)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Õlid ja määrdeained
-                                                <span class="item-count">(1)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Pesuvahendid, -harjad
-                                                <span class="item-count">(8)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Rehvitarvikud
-                                                <span class="item-count">(8)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Salongitarvikud
-                                                <span class="item-count">(10)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Tungrauad 
-                                                <span class="item-count">(19)</span>
-                                            </a>
-                                        </li>
-                                        <li class="d-flex justify-content-between align-items-center">
-                                            <a href="#collapseExamplethird" class="menu__item fw-400 m-0 flex" data-bs-toggle="collapse" >
-                                                Veoköied
-                                                <span class="item-count">(2)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </ul>
-
-                            <li class="d-flex justify-content-between align-items-center">
-                                <a href="" class="menu__item" data-bs-toggle="collapse" > 
-                                    Ehituskeemia
-                                </a>
-                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                                </svg>
-                            </li>
-                        </ul>
-
-                        <li class="d-flex justify-content-between align-items-center d-lg-none">
-                            <a href="#collapseExample1" class="menu__item" data-bs-toggle="collapse" >
+                        <li class="d-lg-none">
+                            <a href="/" class="menu__item justify-content-between">
                                 Kaubamärgid
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                </svg>
                             </a>
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                            </svg>
                         </li>
-                            <!-- <ul class="collapse" id="collapseExample1">
-                                <li><a data-bs-toggle="collapse" collapse data-bs-target="#collapseExample" href="#">take1</a></li>
-                            </ul> -->
-                        <li class="d-flex justify-content-between align-items-center d-lg-none">
-                            <a href="/" class="menu__item">
+                        <li class="d-lg-none">
+                            <a href="/" class="menu__item justify-content-between">
                                 Tootekategooriad
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                </svg>
                             </a>
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                            </svg>
                         </li>
-                        <li class="d-flex justify-content-between align-items-center d-lg-none">
-                            <a href="/" class="menu__item">
+                        <li class="d-lg-none">
+                            <a href="/" class="menu__item justify-content-between">
                                 Soodustooted
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                </svg>
                             </a>
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                            </svg>
                         </li>
                         <li class="d-flex justify-content-between align-items-center d-lg-none">
-                            <a href="/" class="menu__item">
+                            <a href="/" class="menu__item justify-content-between">
                                 Uudistooted
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
+                                </svg>
                             </a>
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.612891 12.1312C0.919141 12.4374 1.41289 12.4374 1.71914 12.1312L6.91289 6.9374C7.15664 6.69365 7.15664 6.2999 6.91289 6.05615L1.71914 0.862401C1.41289 0.55615 0.919141 0.55615 0.612891 0.862401C0.306641 1.16865 0.306641 1.6624 0.612891 1.96865L5.13789 6.4999L0.606642 11.0312C0.306642 11.3312 0.306641 11.8312 0.612891 12.1312Z" fill="#121A23"/>
-                            </svg>
                         </li>
                     </ul>
                 </nav>

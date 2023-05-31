@@ -45,17 +45,17 @@
                     <div class="footer-heading">
                         Transport
                     </div>
-                    <picture class="d-block" style="wight: 112px; height: 30px">
+                    <picture class="d-block">
                         <source srcset="/images/Omniva.png" type="image/png">
-                        <img src="/images/Omniva.webp" alt="" style="wight: 112px; height: 30px;">
+                        <img src="/images/Omniva.webp" alt="" width="112" height="30">
                     </picture>
                     <picture class="d-block">
                         <source srcset="/images/OSC-.png" type="image/png">
-                        <img src="/images/OSC-.webp" alt="" style="wight: 112px; height: 30px;">
+                        <img src="/images/OSC-.webp" alt="" width="112" height="30">
                     </picture>
                     <picture class="d-block">
                         <source srcset="/images/Group.png" type="image/png">
-                        <img src="/images/Group.webp" alt="" style="wight: 112px; height: 30px;">
+                        <img src="/images/Group.webp" alt="" width="112" height="30">
                     </picture>
                 </div>
         </div>

@@ -115,7 +115,15 @@ $(document).ready(function() {
         });
     });
 
+    const collapse = $('[data-categories-collapse]');
+    collapse.on('show.bs.collapse', '.collapse', function () {
+        collapse.find('.collapse.show').collapse('hide');
+    });
 
+    $('.menu-overlay').on('click', function () {
+        $('body').find('.collapse.show').collapse('hide');
+        $(this).removeClass('disp');
+    });
 });
 
 
