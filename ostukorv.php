@@ -55,8 +55,8 @@
                                                     12,40
                                                     <span class="currency">€</span>
                                                 </bdi>
-                                        </span>
-                                        <del>
+                                            </span>
+                                        </del>
                                     </div>
                                 </td>
                             </tr>

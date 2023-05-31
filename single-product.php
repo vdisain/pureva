@@ -59,7 +59,7 @@
                                                                 <span class="currency">€</span>
                                                             </bdi>
                                                         </span>
-                                                    <del>
+                                                    </del>
                                                 </div>
                                             </div>
                                         </div>  
