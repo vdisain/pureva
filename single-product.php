@@ -64,11 +64,25 @@
                                             </div>
                                         </div>  
                                         <div class="single-quantity-wrapper">
-                                            <form class="flex">
-                                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                                                <input type="number" id="number" value="1" />
-                                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                                            </form>
+                                            <div class="flex">
+                                            <button 
+                                                type="button" 
+                                                role="button" 
+                                                class="value-button" 
+                                                data-click-decrease
+                                                data-target="#quantity"
+                                                aria-label="Decrease Value"
+                                            >-</button>
+                                            <input type="number" id="quantity" value="1" class="quantity" />
+                                            <button 
+                                                type="button" 
+                                                role="button" 
+                                                class="value-button" 
+                                                data-click-increase
+                                                data-target="#quantity"
+                                                aria-label="Increase Value"
+                                            >+</button>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="cart mt-4 align-items-center d-md-inline-block"> 

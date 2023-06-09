@@ -124,28 +124,33 @@ $(document).ready(function() {
         $('body').find('.collapse.show').collapse('hide');
         $(this).removeClass('disp');
     });
+
+    $('[data-click-increase]').on('click', function () {
+        const target = $($(this).data('target'));
+        if (!target.length) {
+            return;
+        }
+        let value = parseInt(target.val());
+        if (isNaN(value)) {
+            value = 0;
+        }
+        value++;
+        target.val(value);
+    });
+
+    $('[data-click-decrease]').on('click', function () {
+        const target = $($(this).data('target'));
+        if (!target.length) {
+            return;
+        }
+        let value = parseInt(target.val());
+        if (isNaN(value)) {
+            value = 1;
+        }
+        value--;
+        target.val(Math.max(value, 0));
+    });
 });
-
-
-
-
-// Quantity buttons
-function increaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value++;
-    document.getElementById('number').value = value;
-}
-
-
-function decreaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value < 1 ? value = 1 : '';
-    value--;
-    document.getElementById('number').value = value;
-}
-
 
 // Added to cart popup
 function toggleCart() {
@@ -160,6 +165,6 @@ function change_image(image){
     container.src = image.src;
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
+/* document.addEventListener("DOMContentLoaded", function(event) {
 
-});
+}); */

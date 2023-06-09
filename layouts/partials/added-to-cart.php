@@ -32,11 +32,25 @@
                 </div>
                 <div class="d-flex justify-content-start justify-content-md-between mt-4">
                     <div class="single-quantity-wrapper">
-                        <form class="flex">
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="1" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
-                        </form>
+                        <div class="flex">
+                            <button 
+                                type="button" 
+                                role="button" 
+                                class="value-button" 
+                                data-click-decrease
+                                data-target="<?= '#quantity__' . $i ?>"
+                                aria-label="Decrease Value"
+                            >-</button>
+                            <input type="number" id="<?= 'quantity__' . $i ?>" value="1" class="quantity" />
+                            <button 
+                                type="button" 
+                                role="button" 
+                                class="value-button" 
+                                data-click-increase
+                                data-target="<?= '#quantity__' . $i ?>"
+                                aria-label="Increase Value"
+                            >+</button>
+                        </div>
                     </div>
                     <div class="d-flex align-items-center flex-column ms-4 ms-md-0">
                         <div class="fs-20 fw-600">

@@ -1344,6 +1344,8 @@ input[type=number] {
     align-items: center;
     width: 30px;
     height: 49px;
+    background-color: transparent;
+    border: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -1361,7 +1363,7 @@ input[type=number] {
     padding: 0px;
   }
   
-  input#number {
+  .quantity {
     text-align: center;
     border: 1px solid #b7babd;
     margin: 0px;
@@ -1427,7 +1429,7 @@ input[type=number] {
     z-index: -1;
   }
 
-  .sidecart input#number {
+  .sidecart .quantity {
     width: 80px;
   }
 

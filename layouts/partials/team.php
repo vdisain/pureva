@@ -3,7 +3,7 @@
         <div class="image ">
             <picture>
                 <source srcset="/images/teammember.png" type="image/png">
-                <img src="/images/teammember.webp"  class= "img-fluid" alt="">
+                <img src="/images/teammember.webp" class="img-fluid" alt="">
             </picture>
         </div>
     </div>
