@@ -150,6 +150,30 @@ $(document).ready(function() {
         value--;
         target.val(Math.max(value, 0));
     });
+
+    $('[data-dismiss-submenu]').on('click', function () {
+        const self = $(this)
+        const submenu = self.closest('.collapse')
+
+        if (!submenu.length) {
+            return
+        }
+
+        submenu.collapse('hide')
+    })
+
+    $('[data-dismiss-all]').on('click', function () {
+        $('.collapse').collapse('hide')
+        $('body').removeClass('overflow-y-hidden')
+    })
+
+    $('[data-lock-scroll').on('click', function () {
+        if ($(this).hasClass('collapsed')) {
+            $('body').removeClass('overflow-y-hidden')
+        } else {
+            $('body').addClass('overflow-y-hidden')
+        }
+    })
 });
 
 // Added to cart popup
