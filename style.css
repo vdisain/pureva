@@ -1525,7 +1525,7 @@ p.dropdown-item:active {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .products {
         grid-template-columns: repeat(4, 1fr);
     }
