@@ -1525,6 +1525,12 @@ p.dropdown-item:active {
     }
 }
 
+@media (min-width: 1000px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .product-categories h1 {
     font-size: 30px;
     font-weight: 500;
